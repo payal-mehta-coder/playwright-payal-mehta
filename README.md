@@ -1,17 +1,27 @@
 Overview: 
 This project was developed as part of the Origami QA take-home assessment and demonstrates a Playwright based test suite for validating login functionality.
 
-Setup Instructions: 
-Install dependencies
+### Setup Instructions: 
+### Install dependencies
 npm install
 
-Install Playwright browsers:
+### Install Playwright browsers:
 npx playwright install
 
-Run tests:
-Run tests in headless mode
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+BASE_URL=https://the-internet.herokuapp.com
+USERNAME=tomsmith
+PASSWORD=SuperSecretPassword!
+
+### Run tests in headless mode
 npx playwright test
 
-Run tests in headed mode
+### Run tests in headed mode
 npx playwright test --headed
+
+### To open the report:
+npx playwright show-report
 

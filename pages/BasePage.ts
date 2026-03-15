@@ -8,6 +8,7 @@ export abstract class BasePage {
     }
 
     async navigate(path: string) {
-        await this.page.goto(path);
+        const base = process.env.BASE_URL!;
+        await this.page.goto(`${base}${path}`);
     }
 }

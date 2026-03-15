@@ -17,10 +17,14 @@ export class LoginPage extends BasePage {
     }
 
     async login(username: string, password: string) {
-        await this.page.fill(this.usernameInput, username);
-        await this.page.fill(this.passwordInput, password);
-        await this.page.click(this.loginButton);
-    }
+    await this.page.fill(this.usernameInput, username);
+    await this.page.fill(this.passwordInput, password);
+
+    await Promise.all([
+        this.page.waitForNavigation(),
+        this.page.click(this.loginButton)
+    ]);
+}
 
     async getFlashMessage() {
         return this.page.locator(this.flashMessage);
