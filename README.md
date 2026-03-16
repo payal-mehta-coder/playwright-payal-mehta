@@ -1,5 +1,23 @@
 ## Overview
-This project was developed as part of the Origami QA take-home assessment and demonstrates a Playwright-based test suite for validating login functionality.
+This project was developed as part of the Origami QA take-home assessment and demonstrates a Playwright test suite for validating login functionality.
+
+## Project Structure
+
+```
+playwright-payal-mehta
+│
+├─ pages
+│   ├─ BasePage.ts
+│   └─ LoginPage.ts
+│
+├─ tests
+│   └─ login.spec.ts
+│
+├─ playwright.config.ts
+├─ .env
+├─ package.json
+└─ README.md
+```
 
 ## Setup Instructions
 
