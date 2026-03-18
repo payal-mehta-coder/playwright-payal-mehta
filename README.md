@@ -1,5 +1,5 @@
 ## Overview
-This project was developed as part of the Origami QA take-home assessment and demonstrates a Playwright test suite for validating login functionality.
+This project demonstrates best practices that can be used for Playwright test suites.
 
 ## Project Structure
 
